@@ -49,7 +49,7 @@ I specialize in:
 ## 💼 Professional Experience
 
 ### 🏢 Data Engineer (Summer Intern)
-**Allianz Espanya, Barcelona, Spain** | *Jun 2026 – Present*
+**Allianz Espanya, Barcelona, Spain** | *June 2026 – July 2026*
 - Architected and managed data workflows within Azure Synapse Analytics workspace for large-scale insurance data processing
 - Collaborated with data scientists to identify churn rate parameters, enhancing predictive modeling accuracy
 - Optimized complex SQL queries reducing processing times significantly
