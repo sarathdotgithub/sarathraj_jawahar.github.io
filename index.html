@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sarathraj Jawahar — Data Analyst & Big Data Specialist</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <style>
-        /* ============ RESET & BASE ============ */
+        /* ----- RESET & BASE ----- */
         * {
             margin: 0;
             padding: 0;
@@ -21,14 +21,13 @@
             background: #f7fafc;
         }
 
-        /* ============ CONTAINER ============ */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1.5rem 3rem;
         }
 
-        /* ============ HERO SECTION ============ */
+        /* ----- HERO ----- */
         .hero {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
             color: white;
@@ -170,7 +169,7 @@
             color: #94a3b8;
         }
 
-        /* ============ SECTION ============ */
+        /* ----- SECTION ----- */
         .section {
             background: white;
             border-radius: 16px;
@@ -219,7 +218,7 @@
             margin-bottom: 0.75rem;
         }
 
-        /* ============ SKILLS GRID ============ */
+        /* ----- SKILLS ----- */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -273,23 +272,20 @@
             background: #dbeafe;
             color: #1e40af;
         }
-
         .skill-tag.green {
             background: #d1fae5;
             color: #065f46;
         }
-
         .skill-tag.purple {
             background: #ede9fe;
             color: #5b21b6;
         }
-
         .skill-tag.orange {
             background: #fef3c7;
             color: #92400e;
         }
 
-        /* ============ TECH STACK BADGES ============ */
+        /* ----- TECH STACK ----- */
         .tech-stack {
             display: flex;
             flex-wrap: wrap;
@@ -323,13 +319,15 @@
             font-size: 1rem;
         }
 
-        /* ============ EXPERIENCE CARDS ============ */
+        /* ----- EXPERIENCE CARDS (with logo support) ----- */
         .exp-card {
             padding: 1.5rem;
             border: 1px solid #e2e8f0;
             border-radius: 12px;
             margin-bottom: 1.5rem;
             transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
 
         .exp-card:hover {
@@ -341,9 +339,42 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            align-items: flex-start;
-            gap: 0.5rem;
+            align-items: center;
+            gap: 0.75rem;
             margin-bottom: 0.25rem;
+        }
+
+        .exp-card .header .left {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .exp-card .header .company-logo {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            padding: 4px;
+            flex-shrink: 0;
+        }
+
+        .exp-card .header .company-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+
+        .exp-card .header .company-logo .logo-placeholder {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0f172a;
         }
 
         .exp-card .header h4 {
@@ -392,7 +423,7 @@
             color: #92400e;
         }
 
-        /* ============ PROJECT CARDS ============ */
+        /* ----- PROJECTS ----- */
         .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -469,7 +500,7 @@
             color: #38bdf8;
         }
 
-        /* ============ TABLES ============ */
+        /* ----- TABLES ----- */
         .table-wrapper {
             overflow-x: auto;
             margin: 1rem 0;
@@ -508,7 +539,7 @@
             background: #f8fafc;
         }
 
-        /* ============ QUICK STATS ============ */
+        /* ----- STATS ----- */
         .stats-row {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -535,7 +566,7 @@
             font-weight: 500;
         }
 
-        /* ============ CONTACT ============ */
+        /* ----- CONTACT ----- */
         .contact-links {
             display: flex;
             flex-wrap: wrap;
@@ -565,7 +596,7 @@
             box-shadow: 0 8px 25px rgba(15, 23, 42, 0.1);
         }
 
-        /* ============ FOOTER ============ */
+        /* ----- FOOTER ----- */
         .footer {
             text-align: center;
             padding: 2rem 0 0;
@@ -578,48 +609,40 @@
             color: #ef4444;
         }
 
-        /* ============ RESPONSIVE ============ */
+        /* ----- RESPONSIVE ----- */
         @media (max-width: 768px) {
             .hero {
                 padding: 3rem 1.5rem 2.5rem;
                 border-radius: 0 0 24px 24px;
             }
-
             .hero-text h1 {
                 font-size: 2.2rem;
             }
-
             .hero-text .title {
                 font-size: 1rem;
             }
-
             .hero-avatar .avatar-circle {
                 width: 120px;
                 height: 120px;
                 font-size: 3rem;
             }
-
             .hero-social a {
                 padding: 0.4rem 0.8rem;
                 font-size: 0.8rem;
             }
-
             .section {
                 padding: 1.5rem;
             }
-
             .section h2 {
                 font-size: 1.4rem;
             }
-
             .project-grid {
                 grid-template-columns: 1fr;
             }
-
             .exp-card .header {
                 flex-direction: column;
+                align-items: flex-start;
             }
-
             .stats-row {
                 grid-template-columns: 1fr 1fr;
             }
@@ -629,32 +652,25 @@
             .hero-text h1 {
                 font-size: 1.8rem;
             }
-
             .hero-avatar .avatar-circle {
                 width: 100px;
                 height: 100px;
                 font-size: 2.5rem;
             }
-
             .skills-grid {
                 grid-template-columns: 1fr;
             }
-
             .stats-row {
                 grid-template-columns: 1fr;
             }
-
             .contact-links {
                 flex-direction: column;
             }
         }
 
-        /* Smooth scroll */
         html {
             scroll-behavior: smooth;
         }
-
-        /* Utility */
         .text-muted {
             color: #94a3b8;
             font-size: 0.9rem;
@@ -665,7 +681,7 @@
 
 <div class="container">
 
-    <!-- ========== HERO ========== -->
+    <!-- ===== HERO ===== -->
     <div class="hero">
         <div class="hero-content">
             <div class="hero-text">
@@ -677,15 +693,9 @@
                     <i class="fas fa-phone" style="color:#38bdf8;"></i> +34 677 86 34 71
                 </p>
                 <div class="hero-social">
-                    <a href="https://www.linkedin.com/in/sarathrajj/" target="_blank">
-                        <i class="fab fa-linkedin-in"></i> LinkedIn
-                    </a>
-                    <a href="https://github.com/sarathdotgithub" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="mailto:sjawahar@student.eae.es">
-                        <i class="fas fa-envelope"></i> Email
-                    </a>
+                    <a href="https://www.linkedin.com/in/sarathrajj/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="https://github.com/sarathdotgithub" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="mailto:sjawahar@student.eae.es"><i class="fas fa-envelope"></i> Email</a>
                 </div>
                 <div class="hero-badges">
                     <span class="badge"><i class="fas fa-check-circle" style="color:#38bdf8;"></i> 3+ Years Experience</span>
@@ -699,41 +709,28 @@
         </div>
     </div>
 
-    <!-- ========== ABOUT ========== -->
+    <!-- ===== ABOUT ===== -->
     <div class="section" id="about">
         <h2><span class="icon">👋</span> About Me</h2>
         <p style="font-size:1.05rem; color:#334155;">
-            Data Analyst with <strong>3+ years of experience</strong> in financial analytics, KPI dashboard development, and data quality management. 
-            Skilled in <strong>SQL, Power BI, and Python</strong> with a strong focus on delivering actionable insights for business stakeholders. 
+            Data Analyst with <strong>3+ years of experience</strong> in financial analytics, KPI dashboard development, and data quality management.
+            Skilled in <strong>SQL, Power BI, and Python</strong> with a strong focus on delivering actionable insights for business stakeholders.
             Currently pursuing a <strong>Master's in Big Data & Analytics</strong> at EAE Business School, Barcelona.
         </p>
         <p style="color:#475569;">
-            I combine technical expertise with a deep understanding of data governance, compliance-driven reporting, and process automation. 
+            I combine technical expertise with a deep understanding of data governance, compliance-driven reporting, and process automation.
             Experienced in collaborating with cross-functional teams and communicating complex data narratives to non-technical audiences.
         </p>
 
-        <!-- Stats -->
         <div class="stats-row">
-            <div class="stat-item">
-                <div class="number">3+</div>
-                <div class="label">Years Experience</div>
-            </div>
-            <div class="stat-item">
-                <div class="number">12+</div>
-                <div class="label">Projects Delivered</div>
-            </div>
-            <div class="stat-item">
-                <div class="number">40%</div>
-                <div class="label">Manual Effort Reduced</div>
-            </div>
-            <div class="stat-item">
-                <div class="number">15%</div>
-                <div class="label">Stockouts Reduced</div>
-            </div>
+            <div class="stat-item"><div class="number">3+</div><div class="label">Years Experience</div></div>
+            <div class="stat-item"><div class="number">12+</div><div class="label">Projects Delivered</div></div>
+            <div class="stat-item"><div class="number">40%</div><div class="label">Manual Effort Reduced</div></div>
+            <div class="stat-item"><div class="number">15%</div><div class="label">Stockouts Reduced</div></div>
         </div>
     </div>
 
-    <!-- ========== TECH STACK ========== -->
+    <!-- ===== TECH STACK ===== -->
     <div class="section" id="tech-stack">
         <h2><span class="icon">🛠️</span> Tech Stack</h2>
         <div class="tech-stack">
@@ -750,93 +747,94 @@
         </div>
     </div>
 
-    <!-- ========== SKILLS ========== -->
+    <!-- ===== SKILLS ===== -->
     <div class="section" id="skills">
         <h2><span class="icon">📊</span> Core Skills</h2>
         <div class="skills-grid">
             <div class="skill-category">
                 <h4>📈 Data Analytics & BI</h4>
                 <p>Power BI (DAX, Dashboards, Data Modeling), SQL (Joins, Window Functions), Excel (Power Query, Pivots)</p>
-                <div class="skill-tags">
-                    <span class="skill-tag primary">Power BI</span>
-                    <span class="skill-tag primary">SQL</span>
-                    <span class="skill-tag primary">Excel</span>
-                </div>
+                <div class="skill-tags"><span class="skill-tag primary">Power BI</span><span class="skill-tag primary">SQL</span><span class="skill-tag primary">Excel</span></div>
             </div>
             <div class="skill-category">
                 <h4>🐍 Programming & ETL</h4>
                 <p>Python (Pandas, NumPy, Matplotlib), ETL Pipelines, Data Cleaning, Exploratory Data Analysis (EDA)</p>
-                <div class="skill-tags">
-                    <span class="skill-tag green">Python</span>
-                    <span class="skill-tag green">ETL</span>
-                    <span class="skill-tag green">EDA</span>
-                </div>
+                <div class="skill-tags"><span class="skill-tag green">Python</span><span class="skill-tag green">ETL</span><span class="skill-tag green">EDA</span></div>
             </div>
             <div class="skill-category">
                 <h4>🔒 Governance & Quality</h4>
                 <p>Data Validation, Audit-Ready Record Keeping, Data Migration, Compliance Reporting</p>
-                <div class="skill-tags">
-                    <span class="skill-tag purple">Validation</span>
-                    <span class="skill-tag purple">Compliance</span>
-                    <span class="skill-tag purple">Audit</span>
-                </div>
+                <div class="skill-tags"><span class="skill-tag purple">Validation</span><span class="skill-tag purple">Compliance</span><span class="skill-tag purple">Audit</span></div>
             </div>
             <div class="skill-category">
                 <h4>🛠️ Tools & Platforms</h4>
                 <p>SAP (Basic), GitHub, Streamlit, Jupyter Notebooks, Cloud Computing Fundamentals</p>
-                <div class="skill-tags">
-                    <span class="skill-tag orange">GitHub</span>
-                    <span class="skill-tag orange">Streamlit</span>
-                    <span class="skill-tag orange">Cloud</span>
-                </div>
+                <div class="skill-tags"><span class="skill-tag orange">GitHub</span><span class="skill-tag orange">Streamlit</span><span class="skill-tag orange">Cloud</span></div>
             </div>
         </div>
     </div>
 
-    <!-- ========== EXPERIENCE ========== -->
+    <!-- ===== EXPERIENCE ===== -->
     <div class="section" id="experience">
         <h2><span class="icon">💼</span> Professional Experience</h2>
 
-        <!-- Allianz -->
+        <!-- Allianz (completed internship) -->
         <div class="exp-card">
             <div class="header">
-                <div>
-                    <h4>Data Engineer <span class="text-muted">(Summer Intern)</span></h4>
-                    <p class="company">Allianz Espanya, Barcelona, Spain</p>
+                <div class="left">
+                    <div class="company-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Allianz_logo.svg/1280px-Allianz_logo.svg.png" alt="Allianz logo" />
+                    </div>
+                    <div>
+                        <h4>Data Engineer <span class="text-muted">(Intern)</span></h4>
+                        <p class="company">Allianz Espanya, Barcelona, Spain</p>
+                    </div>
                 </div>
-                <span class="date">Jun 2026 – Present</span>
+                <span class="date">Jun 2026 – Aug 2026</span>
             </div>
             <ul>
                 <li>Architected and managed data workflows within Azure Synapse Analytics workspace to process large-scale insurance and financial datasets for critical downstream reporting.</li>
                 <li>Collaborated closely with data scientists to identify key parameters of customer churn rate, building optimized data pipelines that directly enhanced predictive modeling accuracy.</li>
                 <li>Optimized complex SQL queries and data models, <strong>significantly reducing processing times</strong> and accelerating data accessibility across platforms.</li>
                 <li>Built automated data validation frameworks to safeguard data quality, ensure audit-ready record keeping, and guarantee compliance with strict financial regulations.</li>
+                <li><span class="highlight">Successfully completed 3-month internship</span> – delivered production-ready ETL pipelines and received recognition for data quality improvements.</li>
             </ul>
         </div>
 
-        <!-- Freelance -->
+        <!-- Freelance Data Engineer – malt.es -->
         <div class="exp-card">
             <div class="header">
-                <div>
-                    <h4>Freelance Data Analyst</h4>
-                    <p class="company">Barcelona, Spain</p>
+                <div class="left">
+                    <div class="company-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Malt_logo.png" alt="malt.es logo" style="background:white; padding:2px; border-radius:4px;" />
+                    </div>
+                    <div>
+                        <h4>Freelance Data Engineer</h4>
+                        <p class="company">malt.es (freelance platform), Barcelona, Spain</p>
+                    </div>
                 </div>
-                <span class="date">Jan 2025 – Present</span>
+                <span class="date">Sep 2026 – Present</span>
             </div>
             <ul>
+                <li>Engaged on multiple freelance data engineering projects via malt.es, delivering end-to-end analytics solutions for SMEs and startups.</li>
                 <li>Built automated KPI dashboards in Power BI and Excel, improving data visibility and enabling faster decision-making.</li>
                 <li>Analyzed customer behavior to identify high-value segments and patterns, supporting targeted strategic decisions.</li>
                 <li>Automated recurring reporting workflows using Python, <span class="highlight">reducing manual effort by 40%</span>.</li>
-                <li>Implemented structured data verification steps and cleaning pipelines, improving overall data reliability.</li>
+                <li>Implemented structured data verification steps and cleaning pipelines, improving overall data reliability for clients.</li>
             </ul>
         </div>
 
         <!-- Sun Shine International -->
         <div class="exp-card">
             <div class="header">
-                <div>
-                    <h4>Data Analyst</h4>
-                    <p class="company">Sun Shine International, India</p>
+                <div class="left">
+                    <div class="company-logo">
+                        <span class="logo-placeholder" style="font-size:0.9rem; background:#eef2f6; padding:0.2rem 0.5rem; border-radius:6px;">SSI</span>
+                    </div>
+                    <div>
+                        <h4>Data Analyst</h4>
+                        <p class="company">Sun Shine International, India</p>
+                    </div>
                 </div>
                 <span class="date">Jan 2022 – Aug 2024</span>
             </div>
@@ -848,101 +846,57 @@
         </div>
     </div>
 
-    <!-- ========== PROJECTS ========== -->
+    <!-- ===== PROJECTS ===== -->
     <div class="section" id="projects">
         <h2><span class="icon">🚀</span> Key Projects</h2>
         <div class="project-grid">
-
-            <!-- ManOxCo -->
             <div class="project-card">
                 <span class="emoji">📊</span>
                 <h4>ManOxCo: Big Data Analytics Case Study</h4>
-                <div class="tech-used">
-                    <span>PySpark</span>
-                    <span>SQL</span>
-                    <span>Power BI</span>
-                    <span>GitHub</span>
-                </div>
+                <div class="tech-used"><span>PySpark</span><span>SQL</span><span>Power BI</span><span>GitHub</span></div>
                 <p>Processed large-scale operational datasets in collaboration with Nexus Consultancy. Built predictive demand models <strong>reducing stockouts by 15%</strong>.</p>
                 <div class="links">
-                    <a href="https://github.com/sarathdotgithub/nexus-big-data/tree/copilot/live-project-showcase" target="_blank">
-                        <i class="fab fa-github"></i> Repository
-                    </a>
-                    <a href="https://sarathdotgithub.github.io/nexus-big-data/" target="_blank">
-                        <i class="fas fa-external-link-alt"></i> Website
-                    </a>
+                    <a href="https://github.com/sarathdotgithub/nexus-big-data/tree/copilot/live-project-showcase" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                    <a href="https://sarathdotgithub.github.io/nexus-big-data/" target="_blank"><i class="fas fa-external-link-alt"></i> Website</a>
                 </div>
             </div>
-
-            <!-- REG_MAP -->
             <div class="project-card">
                 <span class="emoji">📈</span>
                 <h4>REG_MAP: HR AI Readiness Assessment</h4>
-                <div class="tech-used">
-                    <span>Streamlit</span>
-                    <span>Power BI</span>
-                    <span>Python</span>
-                </div>
+                <div class="tech-used"><span>Streamlit</span><span>Power BI</span><span>Python</span></div>
                 <p>Developed an interactive dashboard to measure AI maturity, skill gaps, and automation potential across HR functions.</p>
                 <div class="links">
-                    <a href="https://ai-readiness-test-nzbyp8jqhzn2mejvnykyqy.streamlit.app/" target="_blank">
-                        <i class="fas fa-external-link-alt"></i> Live App
-                    </a>
+                    <a href="https://ai-readiness-test-nzbyp8jqhzn2mejvnykyqy.streamlit.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live App</a>
                 </div>
             </div>
-
-            <!-- More Projects -->
             <div class="project-card" style="border: 1px dashed #cbd5e1; background: #fafbfc;">
                 <span class="emoji">🔧</span>
                 <h4>More Projects Coming Soon</h4>
                 <p>I'm constantly building and learning. Check back for new data projects!</p>
-                <div class="tech-used">
-                    <span>Python</span>
-                    <span>Power BI</span>
-                    <span>SQL</span>
-                </div>
+                <div class="tech-used"><span>Python</span><span>Power BI</span><span>SQL</span></div>
             </div>
-
         </div>
     </div>
 
-    <!-- ========== EDUCATION ========== -->
+    <!-- ===== EDUCATION ===== -->
     <div class="section" id="education">
         <h2><span class="icon">🎓</span> Education & Certifications</h2>
         <div class="table-wrapper">
             <table>
-                <thead>
-                    <tr><th>Institution</th><th>Degree</th><th>Year</th></tr>
-                </thead>
+                <thead><tr><th>Institution</th><th>Degree</th><th>Year</th></tr></thead>
                 <tbody>
-                    <tr>
-                        <td><strong>EAE Business School, Barcelona</strong></td>
-                        <td>Master's in Big Data & Analytics</td>
-                        <td>Oct 2025 – Present</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Anna University, Chennai</strong></td>
-                        <td>B.E. Mechanical Engineering (CGPA: 8.2/10)</td>
-                        <td>2017 – 2021</td>
-                    </tr>
+                    <tr><td><strong>EAE Business School, Barcelona</strong></td><td>Master's in Big Data & Analytics</td><td>Oct 2025 – Present</td></tr>
+                    <tr><td><strong>Anna University, Chennai</strong></td><td>B.E. Mechanical Engineering (CGPA: 8.2/10)</td><td>2017 – 2021</td></tr>
                 </tbody>
             </table>
         </div>
 
         <h3>Certifications</h3>
         <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 0.5rem 0 1rem;">
-            <span class="tech-badge" style="background: #dbeafe; border-color: #93c5fd;">
-                <i class="fas fa-certificate" style="color:#1e40af;"></i> IBM Data Science Professional
-            </span>
-            <span class="tech-badge" style="background: #d1fae5; border-color: #6ee7b7;">
-                <i class="fas fa-certificate" style="color:#065f46;"></i> Forage Data Visualization
-            </span>
-            <span class="tech-badge" style="background: #ede9fe; border-color: #c4b5fd;">
-                <i class="fas fa-certificate" style="color:#5b21b6;"></i> LinkedIn GenAI
-            </span>
-            <span class="tech-badge" style="background: #fef3c7; border-color: #fcd34d;">
-                <i class="fas fa-certificate" style="color:#92400e;"></i> Infosys Cloud Computing
-            </span>
+            <span class="tech-badge" style="background: #dbeafe; border-color: #93c5fd;"><i class="fas fa-certificate" style="color:#1e40af;"></i> IBM Data Science Professional</span>
+            <span class="tech-badge" style="background: #d1fae5; border-color: #6ee7b7;"><i class="fas fa-certificate" style="color:#065f46;"></i> Forage Data Visualization</span>
+            <span class="tech-badge" style="background: #ede9fe; border-color: #c4b5fd;"><i class="fas fa-certificate" style="color:#5b21b6;"></i> LinkedIn GenAI</span>
+            <span class="tech-badge" style="background: #fef3c7; border-color: #fcd34d;"><i class="fas fa-certificate" style="color:#92400e;"></i> Infosys Cloud Computing</span>
         </div>
 
         <h3>Languages</h3>
@@ -952,27 +906,21 @@
         </div>
     </div>
 
-    <!-- ========== CONTACT ========== -->
+    <!-- ===== CONTACT ===== -->
     <div class="section" id="contact">
         <h2><span class="icon">📫</span> Let's Connect!</h2>
         <p style="margin-bottom: 1rem;">I'm always open to interesting conversations and collaboration opportunities!</p>
         <div class="contact-links">
-            <a href="https://www.linkedin.com/in/sarathrajj/" target="_blank">
-                <i class="fab fa-linkedin-in"></i> LinkedIn
-            </a>
-            <a href="https://github.com/sarathdotgithub" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="mailto:sjawahar@student.eae.es">
-                <i class="fas fa-envelope"></i> Email
-            </a>
+            <a href="https://www.linkedin.com/in/sarathrajj/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a href="https://github.com/sarathdotgithub" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="mailto:sjawahar@student.eae.es"><i class="fas fa-envelope"></i> Email</a>
         </div>
     </div>
 
-    <!-- ========== FOOTER ========== -->
+    <!-- ===== FOOTER ===== -->
     <div class="footer">
         <p>Built with <span class="heart">❤️</span> by Sarathraj Jawahar</p>
-        <p style="font-size:0.85rem; margin-top:0.25rem;">Last Updated: July 2026</p>
+        <p style="font-size:0.85rem; margin-top:0.25rem;">Last Updated: October 2026</p>
     </div>
 
 </div>
