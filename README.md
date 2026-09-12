@@ -12,7 +12,7 @@
 
 ## 📊 About Me
 
-I'm a Data Analyst with **3+ years of experience** in financial analytics, KPI dashboard development, and data quality management. Currently pursuing a **Master's in Big Data & Analytics** at EAE Business School, Barcelona.
+I'm a Data Analyst with **2+ years of experience** in financial analytics, KPI dashboard development, and data quality management. Currently pursuing a **Master's in Big Data & Analytics** at EAE Business School, Barcelona.
 
 I specialize in:
 - 📈 **Data Visualization & BI** (Power BI, Tableau)
